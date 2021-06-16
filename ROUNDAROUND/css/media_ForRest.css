@@ -1,0 +1,164 @@
+@charset "utf-8";
+/*라운드어라운드 포레스트 미디어쿼리 - media_ForRest.css */
+
+/*미디어쿼리 -1250px 이하*/
+@media only screen and (max-width:1250px) {
+
+    #forrest {
+        height: 1900px;
+    }
+    
+    .forrestbx{
+        min-width: 1020px;
+    }
+
+    .tit {
+        font-size: 3rem;
+    }
+
+    .path ul {
+        font-size: 1.4rem;
+    }
+
+    .content img {
+        width: 750px;
+    }
+}
+
+/*미디어쿼리 -1250px 이하*/
+
+
+/*모바일 미디어쿼리  - 500px 이하*/
+@media only screen and (max-width:500px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    /*******상단영역 변경*******/
+
+    /*상단영역 높이값 변경*/
+    .top {
+        height: 60px;
+    }
+
+    /*햄버거 버튼 크기 조정*/
+    #ham {
+        top: 55%;
+        width: 24px;
+        height: 24px;
+    }
+
+    #ham span {
+        height: 1px;
+    }
+
+    #ham span:nth-child(2) {
+        top: 6px;
+        left: 0;
+    }
+
+    #ham span:nth-child(3) {
+        top: 12px;
+        left: 0;
+    }
+
+    /*검색 버튼 크기 조정*/
+    #magni {
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        background-size: 230px auto;
+    }
+
+    /*로고 크기 조정*/
+    #logo {
+        width: 120px;
+        height: 60px;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    /*gnb 메뉴 숨기기*/
+    .gnb {
+        display: none;
+    }
+
+
+
+    /*************메인영역*************/
+
+    .path {
+        display: none;
+    }
+
+    #forrest {
+        height: 950px;
+        margin-top: 0;
+    }
+    
+    .forrestbx {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .content img {
+        width: 342px;
+        height: 640px;
+    }
+
+    .tit {
+        font-size: 2.5rem;
+    }
+
+
+
+
+    /************하단영역************/
+
+    .info {
+        width: 100%;
+        height: 400px;
+    }
+
+    /*사이트 방침 링크*/
+    .plink li {
+        margin-right: 10px;
+    }
+
+
+    /*회사정보*/
+
+    .address {
+        margin: 0 0 35px;
+        line-height: 2rem;
+    }
+
+    .address span {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .address span:nth-child(1) {
+        margin-top: 15px;
+    }
+
+    /*저작권*/
+    .copyright {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+}
+
+/*모바일 미디어 쿼리*/

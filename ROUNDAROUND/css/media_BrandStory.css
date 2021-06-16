@@ -1,0 +1,184 @@
+@charset "utf-8";
+/*라운드어라운드 브랜드스토리 미디어쿼리 - media_BrandStory.css */
+
+/*모바일 미디어쿼리  - 500px 이하*/
+@media only screen and (max-width:500px) {
+
+    /*******상단영역 변경*******/
+
+
+    /*상단영역 높이값 변경*/
+    .top {
+        height: 60px;
+    }
+
+    /*햄버거 버튼 크기 조정*/
+    #ham {
+        top: 55%;
+        width: 24px;
+        height: 24px;
+    }
+
+    #ham span {
+        height: 1px;
+    }
+
+    #ham span:nth-child(2) {
+        top: 6px;
+        left: 0;
+    }
+
+    #ham span:nth-child(3) {
+        top: 12px;
+        left: 0;
+    }
+
+    /*검색 버튼 크기 조정*/
+    #magni {
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        background-size: 230px auto;
+    }
+
+    /*로고 크기 조정*/
+    #logo {
+        width: 120px;
+        height: 60px;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    /*gnb 메뉴 숨기기*/
+    .gnb {
+        display: none;
+    }
+
+    /*페이지 설정 변경*/
+
+    /*텍스트(페이지5,6 제외)*/
+    .tit {
+
+        font: 2rem'Noto Sans KR', sans-serif;
+    }
+
+    /*텍스트2(페이지5,6)*/
+    .tit2 {
+        bottom: 13%;
+        font: 1.8rem 'Noto Sans KR', sans-serif;
+    }
+
+    /*텍스트(페이지 4)*/
+    .p4box > .tit {
+        font: 2.4rem 'Noto Sans KR', sans-serif;
+    }
+
+
+    /*페이지1 */
+    .pg1 {
+        background: url(../images/m_about1_1.jpg) no-repeat top/cover;
+    }
+
+    /*페이지2 */
+    .pg2 {
+        background: url(../images/m_about1_2.jpg) no-repeat top/cover;
+    }
+
+    /*페이지3*/
+    .pg3 {
+        background: url(../images/m_about1_3.jpg) no-repeat top/cover;
+    }
+
+    /*페이지4*/
+    .pg4 {
+        background: url(../images/m_about1_4.jpg) no-repeat top/cover;
+    }
+
+    /*페이지 5*/
+    /*이미지박스*/
+    .p5imgbx {
+        width: 414px;
+        height: 414px;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*페이지 6*/
+    /*이미지박스*/
+    .p6imgbx {
+        position: relative;
+        top: 61px;
+        height: 414px;
+    }
+
+    /*페이지7*/
+    .pg7 {
+        background: url(../images/m_about1_7.jpg) no-repeat top/cover;
+    }
+
+    .btn2 {
+        width: 38px;
+        height: 38px;
+    }
+
+    .btn_top {
+        background: url(../images/m_goup.png);
+        background-size: 38px 38px;
+    }
+
+    .p7box > .tit {
+        top: 70%;
+    }
+
+    .p7txt > span:nth-child(1) {
+        font: 2rem 'Roboto', sans-serif;
+    }
+
+    .p7txt > span:nth-child(2) {
+        font: 1.4rem 'Roboto', sans-serif;
+    }
+
+    /********하단영역********/
+
+
+    /*사이트 방침 링크*/
+
+    .plink li {
+        margin-right: 15px;
+        font-size: 1.2rem;
+    }
+
+
+    /*회사정보*/
+
+    .address {
+        margin: 0 0 35px;
+        line-height: 2rem;
+    }
+
+    .address span {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .address span:nth-child(1) {
+        margin-top: 15px;
+    }
+
+    /*저작권*/
+    .copyright {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+}
+
+/*모바일 미디어 쿼리*/

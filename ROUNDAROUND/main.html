@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUND A’ROUND - Main</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media_main.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-touch-punch.min.js"></script>
+    <script src="js/jquery.scroll-reveal.js"></script>
+    <script src="js/autoScroll_main.js"></script>
+
+    <style>
+        /*스크롤리빌 플러그인 class*/
+        .js-reveal {
+            opacity: 1;
+            transition: opacity 1s ease-in, transform 1s ease-out;
+        }
+
+        .js-reveal2 {
+            opacity: 1;
+            transition: opacity .8s ease-in, transform .8s ease-out;
+        }
+
+        /*등장액션 숨기기(y축)*/
+        .js-reveal--hidden {
+            opacity: 0;
+            transform: translateY(200px);
+        }
+
+        /*등장액션 숨기기2(y축)*/
+        .js-reveal2--hidden {
+            opacity: 0;
+            transform: translateY(130px);
+        }
+    </style>
+</head>
+
+<body>
+    <!--1. 상단영역-->
+    <header class="top">
+        <div id="top">
+            <!--1-1.햄버거버튼-->
+            <button id="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!--1-2. 검색버튼-->
+            <button id="magni">
+                <span class="bld">돋보기 검색</span>
+            </button>
+        </div>
+    </header>
+    <!--2. GNB 메뉴-->
+    <nav class="gnb">
+        <ul id="gnb">
+            <!--2-1. about-->
+            <li class="about glist">
+                <a href="about_BrandStroy.html">About</a>
+                <ul class="about_sm">
+                    <li>
+                        <a href="about_BrandStroy.html"><span>Brand Story</span></a>
+                    </li>
+                    <li>
+                        <a href="about_ForRest.html"><span>ROUND A’ROUND FOR REST</span></a>
+                    </li>
+                    <li>
+                        <a href="about_CupOfTherapy.html"><span>Cup Of Therapy</span></a>
+                    </li>
+                </ul>
+            </li>
+            <!--2-2. products-->
+            <li class="product glist">
+                <a href="Products.html">Products</a>
+                <ul class="product_sm">
+                    <li>
+                        <a href="Products_GreenteaSkinCare.html">Greentea Skin Care</a>
+                        <div id="greentea_sm">
+                            <ul class="greentea_sm">
+                                <li>
+                                    <a href="Products_GreenteaSkinCare.html">
+                                        <img src="images/greentea_1.png" alt="에센스워터">
+                                        <span>그린티 약산성 에센스 워터</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_GreenteaSkinCare.html">
+                                        <img src="images/greentea_2.png" alt="에센스로션">
+                                        <span>그린티 약산성 에센스 로션</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_GreenteaSkinCare.html">
+                                        <img src="images/greentea_3.png" alt="세럼">
+                                        <span>그린티 시카 세럼</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_GreenteaSkinCare.html">
+                                        <img src="images/greentea_4.png" alt="미스트">
+                                        <span>그린티 수딩 미스트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_GreenteaSkinCare.html">
+                                        <img src="images/greentea_5.png" alt="배리어크림">
+                                        <span>그린티 시카 배리어 크림</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_GreenteaSkinCare.html">
+                                        <img src="images/greentea_6.png" alt="릴리프크림">
+                                        <span>그린티 릴리프 크림</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Products_BasicSkinCare.html">Basic Skin Care</a>
+                        <div id="basic_sm">
+                            <ul class="basic_sm">
+                                <li>
+                                    <a href="Products_BasicSkinCare.html">
+                                        <img src="images/basic_1.png" alt="하이드레이팅워터">
+                                        <span>컴포트 하이드레이팅 워터</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_BasicSkinCare.html">
+                                        <img src="images/basic_2.png" alt="하이드레이터">
+                                        <span>에센셜 부스팅 하이드레이터</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_BasicSkinCare.html">
+                                        <img src="images/basic_3.png" alt="세럼">
+                                        <span>리페어링 액티브 세럼</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_BasicSkinCare.html">
+                                        <img src="images/basic_4.png" alt="배리어크림">
+                                        <span>인텐스 배리어 크림</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Products_HomeFragrance.html">Home Fragrance</a>
+                        <div id="home_sm">
+                            <ul class="home_sm">
+                                <li>
+                                    <a href="Products_HomeFragrance.html">
+                                        <img src="images/home1.png" alt="디퓨저">
+                                        <span>드라이플라워 디퓨저</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_HomeFragrance.html">
+                                        <img src="images/home2.png" alt="스프레이">
+                                        <span>리빙케어 스프레이</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_HomeFragrance.html">
+                                        <img src="images/home3.png" alt="미스트">
+                                        <span>릴렉싱 필로우 미스트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_HomeFragrance.html">
+                                        <img src="images/home4.png" alt="캔들">
+                                        <span>센티드 캔들</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_HomeFragrance.html">
+                                        <img src="images/home5.png" alt="디퓨저">
+                                        <span>선인장 디퓨저</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_HomeFragrance.html">
+                                        <img src="images/home6.png" alt="디퓨저">
+                                        <span>마이 러블리 펫 디퓨저</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Products_LifeFragrance.html">Life Fragrance</a>
+                        <div id="life_sm">
+                            <ul class="life_sm">
+                                <li>
+                                    <a href="Products_LifeFragrance.html">
+                                        <img src="images/life1.png" alt="블룸에디션">
+                                        <span>블룸 에디션</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Products_LifeFragrance.html">
+                                        <img src="images/life2.png" alt="프래그런스">
+                                        <span>라이프 프래그런스</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </li>
+            <!--2-3. stores-->
+            <li class="store glist">
+                <a href="Store.html">Stores</a>
+            </li>
+        </ul>
+    </nav>
+    <!--모바일용 메뉴박스-->
+    <div id="momenu">
+        <ul id="navi">
+            <li class="group">
+                <div class="mtitle"> About </div>
+                <ul class="sub">
+                    <li><a href="about_BrandStroy.html"> Brand Story </a></li>
+                    <li><a href="about_ForRest.html"> ROUND A’ROUND FOR REST </a></li>
+                    <li><a href="about_CupOfTherapy.html"> Cup Of Therapy </a></li>
+                </ul>
+            </li>
+            <li class="group">
+                <div class="mtitle"> Products </div>
+                <ul class="sub">
+                    <li><a href="Products_GreenteaSkinCare.html"> Greentea Skin Care </a></li>
+                    <li><a href="Products_BasicSkinCare.html"> Basic Skin Care </a></li>
+                    <li><a href="Products_HomeFragrance.html"> Home Fragrance </a></li>
+                    <li><a href="Products_LifeFragrance.html"> Life Fragrance </a></li>
+                </ul>
+            </li>
+            <li class="group">
+                <div class="mtitle"><a href="store.html">Stores</a></div>
+            </li>
+        </ul>
+    </div>
+    <!--3. 일상 영역-->
+    <section class="daylife page">
+        <!--3-1. 일상 왼쪽영역(로고,텍스트)-->
+        <div class="dleft">
+            <div id="logo">
+                <img src="images/logo_main.png" alt="메인로고">
+            </div>
+            <div class="p1txt">
+                일상 속 기분 좋은 휴식 <br>
+                라이프 코스메틱
+                <span>라운드어라운드</span>
+            </div>
+        </div>
+        <!--3-2. 일상 오른쪽영역(이미지고정)-->
+        <div class="dright"></div>
+    </section>
+    <!--4. 브랜드 스토리 영역-->
+    <section class="bstory page">
+        <div class="p2box js-reveal2">
+            <!--4-1. 텍스트1-->
+            <div class="p2txt1">
+                The Life Cosmetic<br>
+                ROUND A'ROUND
+            </div>
+            <!--4-2. 텍스트2-->
+            <div class="p2txt2">
+                라운드어라운드는 나를 둘러싼 일상에 기분 좋은 휴식을 선물하는<br>
+                NO.1 라이프 코스메틱 브랜드입니다.
+            </div>
+            <!--4-3. 브랜드스토리 이동버튼-->
+            <a href="">Brand Story</a>
+        </div>
+    </section>
+    <!--5. 스킨케어 영역-->
+    <section class="skincare page">
+        <!--5-1. 스킨케어 왼쪽영역(이미지 고정)-->
+        <div class="sleft"></div>
+        <!--5-1. 스킨케어 오른쪽영역-->
+        <div class="sright">
+            <!--5-1(1). 오른쪽영역 첫페이지-->
+            <div id="sr1" class="js-reveal">
+                <div class="sctxt1">Skin Care</div>
+                <div class="sctxt2">바쁜 일상 속에서도 그 무엇보다 소중한<br>
+                    나의 피부를 위한 스킨케어를 제안합니다</div>
+                <a href="Products.html">More</a>
+            </div>
+            <!--5-1(2). 오른쪽영역 두번째페이지-->
+            <div id="sr2">
+                <!--그린티 스킨케어 영역-->
+                <div class="greentea">
+                    <div class="gimg">
+                        <img src="images/pg3_1.jpg" alt="그린티스킨케어">
+                    </div>
+                    <div class="gtxt js-reveal2">
+                        <span>Greentea<br>Skin Care</span>
+                        <span>피부를 위한<br>
+                            ‘착한’ 스킨케어의 시작<br>
+                            그린티 수분 진정<br>
+                            스킨케어 라인</span>
+                        <a href="Products_GreenteaSkinCare.html">More</a>
+                    </div>
+                </div>
+                <!--베이직 스킨케어 영역-->
+                <div class="basic">
+                    <div class="btxt js-reveal2">
+                        <span>Basic <br>Skin Care</span>
+                        <span>꼭 필요한 것만 담아<br>
+                            매일이 더 편안한 피부<br>
+                            베이직 스킨케어 라인</span>
+                        <a href="Products_BasicSkinCare.html">More</a>
+                    </div>
+                    <div class="bimg">
+                        <img src="images/pg3_2.jpg" alt="베이직스킨케어">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--56 프래그런스 영역-->
+    <section class="fragrance page">
+        <!--6-1. 프래그런스 왼쪽영역-->
+        <div class="fleft">
+            <!--6-1(1). 왼쪽영역 첫페이지-->
+
+            <div id="fl1" class="js-reveal">
+                <div class="fgtxt1">Fragrance</div>
+                <div class="fgtxt2">나와 나를 둘러싼 모든 시간과 공간을 더 가치있게<br>
+                    채워주는 라운드어라운드의 프래그런스</div>
+                <a href="Products.html">More</a>
+            </div>
+            <!--6-1(2). 왼쪽영역 두번째페이지-->
+            <div id="fl2">
+                <!--홈 프래그런스 영역-->
+                <div class="home">
+                    <div class="htxt js-reveal2">
+                        <span>Home<br>Fragrance</span>
+                        <span>
+                            은은하게 오랫동안 지속되는<br>
+                            향기로 공간을 스타일링 하는<br>
+                            홈 프래그런스</span>
+                        <a href="Products_HomeFragrance.html">More</a>
+                    </div>
+                    <div class="himg">
+                        <img src="images/pg4_1.jpg" alt="홈프래그런스">
+                    </div>
+                </div>
+                <!--라이프 프래그런스 영역-->
+                <div class="life">
+                    <div class="limg">
+                        <img src="images/pg4_2.jpg" alt="라이프프래그런스">
+                    </div>
+                    <div class="ltxt js-reveal2">
+                        <span>Life<br>Fragrance</span>
+                        <span>남들과는 다르게 나의 일상을<br>
+                            특별하게 채우는 감성적인 향기</span>
+                        <a href="Products_LifeFragrance.html">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--6-2. 프래그런스 오른쪽영역(이미지고정)-->
+        <div class="fright"></div>
+    </section>
+    <!--7. 하단영역-->
+    <footer class="info page">
+        <!--7-1. sns영역-->
+        <div id="sns" class="js-reveal2">
+            <!--7-1(1). sns 텍스트-->
+            <h3># ROUND A’ROUND</h3>
+            <!--7-1(2). sns 원형 로고-->
+            <div class="sclogo">
+                <a href="https://www.instagram.com/roundaround_official/" target="_blank">
+                    <span class="scimg"></span>
+                    <p>roundaround_official</p>
+                </a>
+            </div>
+            <!--7-1(3). sns 이미지 박스-->
+            <ul class="snsimg">
+                <li>
+                    <a href="https://www.instagram.com/p/BzhMaFdHnCG/" target="_blank">
+                        <img src="images/sns1.jpg" alt="sns이미지">
+                    </a>
+                </li>
+                <li><a href="https://www.instagram.com/p/ByZ15FGH8ta/" target="_blank">
+                        <img src="images/sns2.jpg" alt="sns이미지">
+                    </a>
+                </li>
+
+                <li><a href="https://www.instagram.com/p/Bx9hw-WHHbR/" target="_blank">
+                        <img src="images/sns3.jpg" alt="sns이미지">
+                    </a>
+                </li>
+
+                <li><a href="https://www.instagram.com/p/BxqsoX8H2QC/" target="_blank">
+                        <img src="images/sns4.jpg" alt="sns이미지">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--7-2. 하단정보영역-->
+        <div id="ifbox">
+            <!--하단정보 전체박스-->
+            <div class="iwrap">
+                <!--하단로고-->
+                <div class="flogo">
+                    <img src="images/logo_bottom.png" alt="하단로고">
+                </div>
+                <!--사이트 방침 링크-->
+                <div id="plinkbox">
+                    <ul class="plink">
+                        <li>
+                            <a href="http://www.oliveyoung.co.kr/store/company/privacy.do">
+                                개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.oliveyoung.co.kr/store/company/terms.do">
+                                이용약관
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.oliveyoung.co.kr/store/company/legal.do">
+                                법적고지
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--회사 정보-->
+                <address class="address">
+                    <span>씨제이올리브영 주식회사</span>
+                    <span>대표이사 : 구창근</span>
+                    <span>사업자등록번호 : 809-81-01574</span><br>
+                    <span>고객센터 : 1522-0882</span>
+                    <span>주소 : (04323) 서울특별시 용산구 한강대로 366 (동자동) 6층</span>
+                </address>
+                <!--저작권-->
+                <span class="copyright">Copyright ©2019 CJ OliveYoung. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

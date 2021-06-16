@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*기본CSS - core.css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    /*min-width: 1020px;*/
+    font: 10px 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}

@@ -1,0 +1,545 @@
+@charset "utf-8";
+/*라운드어라운드 메인 미디어쿼리 - media_main.css */
+
+/*미디어쿼리 - 1024px이하*/
+@media only screen and (max-width:1250px) {
+    
+    /*그린티 스킨케어 영역*/
+    .gimg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*베이직 스킨케어 영역*/
+    .bimg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*홈프래그런스 영역*/
+    .himg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*라이프프래그런스 영역*/
+    .limg img {
+        width: 230px;
+        height: 330px;
+    }
+
+    /*sns 영역*/
+    .snsimg {
+        width: 100%;
+    }
+
+    .snsimg li {
+        width: 250px;
+        height: 250px;
+    }
+
+
+}
+
+/*미디어쿼리 - 1024px이하*/
+
+/*미디어쿼리 -900px 이하*/
+@media only screen and (max-width:900px) {
+    
+    /*공통 페이지*/
+    .page{
+        min-width: 900px;
+    }
+
+    /*그린티 스킨케어 영역*/
+    .gimg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .gtxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .gtxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /*베이직 스킨케어 영역*/
+    .bimg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .btxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .btxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /*홈프래그런스 영역*/
+    .himg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .htxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .htxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+    /*라이프프래그런스 영역*/
+    .limg img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .ltxt > span:nth-child(1) {
+        font: bold 2.5rem/4rem 'Roboto', sans-serif;
+    }
+
+    .ltxt > span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+}
+
+/*미디어쿼리 -900px 이하*/
+
+
+/*모바일 미디어쿼리  - 500px 이하*/
+@media only screen and (max-width:500px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    /*******상단영역 변경*******/
+
+    /*상단영역 높이값 변경*/
+    .top {
+        height: 60px;
+    }
+
+    /*햄버거 버튼 크기 조정*/
+    #ham {
+        top: 55%;
+        width: 24px;
+        height: 24px;
+    }
+
+    #ham span {
+        height: 1px;
+    }
+
+    #ham span:nth-child(2) {
+        top: 6px;
+        left: 0;
+    }
+
+    #ham span:nth-child(3) {
+        top: 12px;
+        left: 0;
+    }
+
+    /*검색 버튼 크기 조정*/
+    #magni {
+        right: 5%;
+        width: 24px;
+        height: 24px;
+        background-size: 230px auto;
+    }
+
+    /*gnb 메뉴 숨기기*/
+    .gnb {
+        display: none;
+    }
+    
+    /*공통 페이지*/
+    .page{
+        min-width: auto;
+    }
+
+    /**************일상영역**************/
+    .daylife {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /*일상 왼쪽영역(로고,텍스트)*/
+    .dleft {
+        flex: 0.8;
+    }
+
+    /*로고*/
+    #logo {
+        top: 36%;
+        left: 10%;
+        width: 200px;
+        height: 56px;
+    }
+
+    /*텍스트*/
+    .p1txt {
+        top: 65%;
+        left: 10%;
+        font-size:
+    }
+
+    /* 일상 오른쪽영역(이미지고정)*/
+    .dright {
+        flex: 1.2;
+        background: url(../images/m_pg1.jpg) no-repeat top/cover;
+    }
+
+    /*******브랜드스토리 영역******/
+    .bstory {
+        height: 100%;
+        background: url(../images/m_pg2.jpg) no-repeat top/cover;
+    }
+
+    /*텍스트1*/
+    .p2txt1 {
+        font-size: 3.2rem;
+    }
+
+    /* 텍스트2*/
+    .p2txt2 {
+        font-size: 1.35rem;
+    }
+
+    /*브랜드스토리 이동버튼*/
+    .p2box > a {
+        width: 120px;
+        margin: 40px auto 0;
+        font-size: 1.35rem;
+    }
+
+    /**********스킨케어 영역**********/
+
+    /*스킨케어 전체박스*/
+
+    .skincare {
+        height: 300vh;
+        flex-direction: column;
+
+    }
+
+    /*스킨케어 왼쪽영역(이미지 고정)*/
+    .sleft {
+        flex: none;
+        height: 60vh;
+        background: url(../images/m_pg3.jpg) no-repeat top/auto 100%;
+    }
+
+    /*스킨케어 오른쪽영역*/
+    .sright {
+        flex: none;
+        height: 240vh;
+    }
+
+    /*오른쪽 영역 첫페이지*/
+    #sr1 {
+        height: 40vh;
+    }
+
+    /*텍스트*/
+    .sctxt1 {
+        bottom: 72%;
+    }
+
+    .sctxt2 {
+        bottom: 50%;
+    }
+
+    /*more 이동버튼*/
+    #sr1 > a {
+        bottom: 25%;
+    }
+
+    /*오른쪽 영역 두번째 페이지*/
+    #sr2 {
+        height: 200vh;
+    }
+
+    /*그린티 스킨케어 영역*/
+    .greentea {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    /*그린티 이미지*/
+    .gimg {
+        height: 60vh;
+        flex: none;
+    }
+
+    .gimg img {
+        width: 256px;
+        height: 342px;
+        top: 53%;
+    }
+
+    /*그린티 텍스트*/
+    .gtxt {
+        height: 40vh;
+        flex: none;
+    }
+
+    .gtxt > span:nth-child(1) {
+        top: 0%;
+        left: 20%;
+    }
+
+    .gtxt > span:nth-child(2) {
+        top: 34%;
+        left: 20%;
+    }
+
+    .gtxt > a {
+        top: 70%;
+        left: 20%;
+    }
+
+
+    /*베이직 스킨케어 영역*/
+    .basic {
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    /*이미지*/
+    .bimg {
+        flex: none;
+        height: 60vh;
+    }
+
+    .bimg img {
+        top: 53%;
+        left: 50%;
+        width: 256px;
+        height: 342px;
+    }
+
+    /*텍스트*/
+    .btxt {
+        flex: none;
+        height: 40vh;
+        text-align: left;
+    }
+
+    .btxt > span:nth-child(1) {
+        top: 0;
+        left: 20%;
+    }
+
+    .btxt > span:nth-child(2) {
+        top: 34%;
+        left: 20%;
+    }
+
+    .btxt > a {
+        top: 67%;
+        left: 20%;
+    }
+
+    /**********프래그런스 영역**********/
+
+    /*스킨케어 전체박스*/
+
+    .fragrance {
+        height: 300vh;
+        flex-direction: column-reverse;
+
+    }
+
+    /*프래그런스 오른쪽 영역(이미지 고정)*/
+    .fright {
+        flex: none;
+        height: 60vh;
+        background: url(../images/m_pg4.jpg) no-repeat top/auto 100%;
+    }
+
+    /*6-1. 프래그런스 왼쪽영역*/
+    .fleft {
+        flex: none;
+        height: 240vh;
+    }
+
+    /*왼쪽 영역 첫페이지*/
+    #fl1 {
+        height: 40vh;
+    }
+
+    /*텍스트*/
+    .fgtxt1 {
+        bottom: 72%;
+    }
+
+    .fgtxt2 {
+        bottom: 50%;
+    }
+
+    /*more 이동버튼*/
+    #fl1 > a {
+        bottom: 25%;
+    }
+
+    /*왼쪽 영역 두번째 페이지*/
+    #fl2 {
+        height: 200vh;
+    }
+
+    /*홈프래그런스 스킨케어 영역*/
+    .home {
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    /*홈 이미지*/
+    .himg {
+        height: 60vh;
+        flex: none;
+    }
+
+    .himg img {
+        width: 256px;
+        height: 342px;
+        top: 53%;
+    }
+
+    /*홈 텍스트*/
+    .htxt {
+        height: 40vh;
+        flex: none;
+        text-align: left;
+    }
+
+    .htxt > span:nth-child(1) {
+        top: 0%;
+        left: 20%;
+    }
+
+    .htxt > span:nth-child(2) {
+        top: 34%;
+        left: 20%;
+    }
+
+    .htxt > a {
+        top: 65%;
+        left: 20%;
+    }
+
+
+    /*라이프 프래그런스 영역*/
+    .life {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    /*이미지*/
+    .limg {
+        flex: none;
+        height: 60vh;
+    }
+
+    .limg img {
+        top: 53%;
+        left: 50%;
+        width: 256px;
+        height: 342px;
+    }
+
+    /*텍스트*/
+    .ltxt {
+        flex: none;
+        height: 40vh;
+        text-align: left;
+    }
+
+    .ltxt > span:nth-child(1) {
+        top: 0;
+        left: 20%;
+    }
+
+    .ltxt > span:nth-child(2) {
+        top: 34%;
+        left: 20%;
+    }
+
+    .ltxt > a {
+        top: 63%;
+        left: 20%;
+    }
+
+
+    /********하단영역********/
+
+
+    /*sns 영역*/
+
+    #sns > h3 {
+        font-size: 3rem;
+    }
+
+    .snsimg {
+        top: 68%;
+        width: 80vw;
+    }
+
+    .snsimg li {
+        width: 200px;
+        height: 150px;
+        padding-right: 20px;
+    }
+
+    .snsimg li:nth-child(2),
+    .snsimg li:nth-child(3) {
+        display: none;
+    }
+
+    /*사이트 방침 링크*/
+
+    .plink li {
+        margin-right: 15px;
+        font-size: 1.2rem;
+    }
+
+
+    /*회사정보*/
+
+    .address {
+        margin: 0 0 35px;
+        line-height: 2rem;
+    }
+
+    .address span {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .address span:nth-child(1) {
+        margin-top: 15px;
+    }
+
+    /*저작권*/
+    .copyright {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+
+
+
+}
+
+/*모바일 미디어 쿼리*/
